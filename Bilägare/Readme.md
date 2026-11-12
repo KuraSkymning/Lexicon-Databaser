@@ -28,10 +28,10 @@ Ange minst två skäl till varför detta inte är bra.
 
 3. För att lösa problemet behöver vi primärnyckel och sekundärnyckel. Beskriv dessa och ange vad skillnaden är.
     * En primärnyckel är en kolumn vars värden unikt identifierar varje rad i tabellen.
-    * En sekundärnyckel är en kolumn i en annan tabell där det finns en koppling från den första tabellen till den andra. En sekundärnyckel behöver i allmänhet inte vara unik, eftersom en rad i den första tabellen ibland ska kunna vara kopplad till fler än en rad i den andra tabellen.
+    * En sekundärnyckel är en kolumn i en annan tabell där det finns en koppling från den första tabellen till den andra, genom att sekundärnyckeln har samma värde som primärnyckeln i den första tabellen. En sekundärnyckel behöver i allmänhet inte vara unik, eftersom en rad i den första tabellen ibland ska kunna vara kopplad till fler än en rad i den andra tabellen.
 
 4. Är personnummer ett bra val för en primärnyckel? Motivera.
-    * Om man har en tabell som bara innehåller personer kan man använda personnummer som primärnyckel, eftersom personnumret är unikt för varje person.
+    * Om man har en tabell som innehåller personer där varje person bara kan förekomma en gång kan man använda personnummer som primärnyckel, eftersom personnumret är unikt för varje person.
     * Om man i bilägardatabasen delar upp tabellen i två så att den ena tabellen bara innehåller personer går det att använda personnummer som primärnyckel för den tabellen, eftersom varje person då bara förekommer en gång i tabellen och personnumret är unikt.
     * I den ursprungliga tabellen kan samma person förekomma fler än en gång och då kan man inte ha personnummer som primärnyckel, eftersom den måste vara unik för en rad.
 
@@ -39,7 +39,7 @@ Ange minst två skäl till varför detta inte är bra.
     * Nej, inte i det här fallet. Varje person kan äga flera bilar, och då måste sekundärnyckeln kunna ha samma värde på flera rader.
 
 6. Vad är skillnaden på data och information?
-    * Information är data som följer en viss struktur och därmed kan tolkas på ett entydigt vis, medan ren data inte följer någon särskild struktur.
+    * Information är data som följer en viss struktur och därmed kan tolkas på ett entydigt vis, medan ren data inte följer någon känd struktur.
 
 7. Ge exempel på minst två av relationerna en till en, en till många och många till många.
     * En till en: bil till registreringsnummer, person till personnummer
