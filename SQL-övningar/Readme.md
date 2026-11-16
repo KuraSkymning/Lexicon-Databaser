@@ -280,12 +280,12 @@ INSERT INTO testTrigger
 VALUES('Kaisa', 'Varg');
 ```
 
-![TriggerDB](./Triggerdb.png)
-![TriggerDB2](./Triggerdb2.png)
+![TriggerDB](./TriggerDB.png)
+![TriggerDB2](./TriggerDB2.png)
 
 # Övning 8
 
-![Databastyper](databastyper.svg)
+![Databastyper](Databastyper.svg)
 
 * Relationsdatabaser
     - Lagrar data enligt en specifik struktur, i rader i tabeller där varje tabell har en särskild uppsättning kolumner.
